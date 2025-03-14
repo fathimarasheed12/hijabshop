@@ -1,0 +1,120 @@
+/* General Reset and Font Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  height: 100vh;
+  background-color: #f0f4f8;
+  overflow: hidden;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+  background-color: #3a0606;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  justify-content: space-between;
+}
+
+.sidebar .logo {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  color: #f0f4f8;
+}
+
+.sidebar .nav-links {
+  width: 100%;
+  list-style: none;
+  margin-top: 20px;
+  flex-grow: 1;
+}
+
+.sidebar .nav-links li {
+  width: 100%;
+}
+
+.sidebar .nav-links a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 15px 20px;
+  width: 100%;
+  font-size: 1.1em;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.sidebar .nav-links a:hover,
+.sidebar .nav-links a.active {
+  background-color: #751515;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  transform: translateX(1px);
+}
+
+/* Main Content Styles */
+.main-content {
+  flex: 1;
+  margin-left: 250px; /* Adjust for the sidebar */
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #f0f4f8;
+}
+
+.main-content iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  visibility: visible; /* Ensure iframe content is visible */
+}
+
+/* Logout Button Styles */
+.logout-btn {
+  width: 100%;
+  background-color: #050505;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  font-size: 16px;
+  border-radius: 0;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+.logout-btn:hover {
+  background-color: #363738;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .sidebar .nav-links a {
+    font-size: 0.9em;
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+}

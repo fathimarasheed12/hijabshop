@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  .container {
+    max-width: 550px;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  h2 {
+    font-size: 30px;
+    color: #3a0606;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  input, select, textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    margin-left: 10%;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    border: 1px solid #7e2828;
+  }
+  ::placeholder {
+    color: #333;
+  }
+  label {
+    margin-left: 10%;
+  }
+  textarea {
+    width: 80%;
+    border: none;
+    outline: none;
+    border: 1px solid  #7e2828;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  button {
+    width: 30%;
+    padding: 10px;
+    background: #3a0606;
+    color: #fff;
+    border-radius: 21px;
+    outline: none;
+    border: none;
+    margin-left: 35%;
+    cursor: pointer;
+  }
+  .error {
+    color: rgb(32, 32, 32);
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+  }

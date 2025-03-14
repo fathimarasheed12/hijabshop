@@ -1,0 +1,101 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+table {
+    width: 85%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    margin-left: 112px;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+table th {
+    background-color: #3a0606;
+    color: #fff;
+    font-size: 1em;
+}
+h2 {
+    text-align: center;
+    font-size: xx-large;
+    color: #3a0606;
+}
+.category-add-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.add-hijab-button {
+    padding: 10px 20px;
+    background-color: #3a0606;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.add-hijab-button:hover {
+    background-color: #7e2828;
+}
+.category-add-container select {
+    padding: 6px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 250px;
+    border: none;
+    outline: none;
+}
+#category-filter:hover {
+    border-color: #7e2828;
+}
+#category-filter:focus {
+    border-color: #7e2828;
+    box-shadow: 0 0 5px #3a0606;
+    outline: none;
+}
+.hijab-details {
+    text-align: justify;
+    padding: 10px;
+    line-height: 1.6; 
+}
+img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+}
+.action-button {
+    padding: 8px 15px;
+    background-color: #3a0606;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.action-button:hover {
+    background-color: #7e2828;
+}
+.highlight-text {
+    color: #963d3d;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    .category-add-container {
+        flex-direction: column;
+    }
+    .category-add-container select,
+    .add-hijab-button {
+        width: 80%;
+    }
+}
+td.hijab-info {
+    text-align: left;
+    padding-left: 10px;
+}
